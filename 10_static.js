@@ -15,6 +15,6 @@ describe ("static", function() {
           expect(Character.staticMethod()).toEqual("This is a static method")    // we can access a static property using the class name
 
           const warrior = new Character()
-          expect(warrior.staticMethod).toBeFalsy()   // static methods are not defined for instances of the class
+          expect(warrior.staticMethod).toBeUndefined()   // static methods are not defined for instances of the class
         })
   })
